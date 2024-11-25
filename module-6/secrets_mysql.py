@@ -11,7 +11,7 @@ config = {
 "password" : secrets["PASSWORD"],
 "host" : secrets["HOST"],
 "database" : secrets["DATABASE"],
-"raise_on_warnings" : secrets["RAISE_ON_WARNINGS"],
+"raise_on_warnings" : secrets["RAISE_ON_WARNINGS"]
 
 }
 
@@ -32,4 +32,4 @@ except mysql.connector.Error as err:
         print(err)
     
 finally:
-    db.close()
+        db.close()
