@@ -4,15 +4,14 @@ from mysql.connector import errorcode
 import dotenv
 from dotenv import dotenv_values
 
-secrets = dotenv_values(".env")
+secrets = dotenv_values(r".env")
 
 config = {
 "user" : secrets["USER"],
 "password" : secrets["PASSWORD"],
 "host" : secrets["HOST"],
 "database" : secrets["DATABASE"],
-"raise_on_warnings" : secrets["RAISE_ON_WARNINGS"],
-
+"raise_on_warnings" :secrets["R_O_W"]
 }
 
 try:
